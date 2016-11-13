@@ -1,6 +1,0 @@
-version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
-options: "176ba4fc32783e784dcbdeed1487b898"
-build_time: [532387232, 965157000]
-inputs:
-  "/Users/migs647/Desktop/TicketFare/TicketFare/ViewController.swift": [532387230, 0]
-  "/Users/migs647/Desktop/TicketFare/TicketFare/AppDelegate.swift": [532387230, 0]
