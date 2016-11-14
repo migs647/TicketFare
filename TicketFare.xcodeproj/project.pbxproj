@@ -11,7 +11,7 @@
 		968B72BB1DD9109E009A9BDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968B72B91DD9109E009A9BDC /* Main.storyboard */; };
 		968B72BD1DD9109E009A9BDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968B72BC1DD9109E009A9BDC /* Assets.xcassets */; };
 		968B72C01DD9109E009A9BDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968B72BE1DD9109E009A9BDC /* LaunchScreen.storyboard */; };
-		968B72CB1DD9109E009A9BDC /* TicketFareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B72CA1DD9109E009A9BDC /* TicketFareTests.swift */; };
+		968B72CB1DD9109E009A9BDC /* FareDataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B72CA1DD9109E009A9BDC /* FareDataModelTests.swift */; };
 		968B72D61DD91A72009A9BDC /* FareDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B72D51DD91A72009A9BDC /* FareDataModel.swift */; };
 		968B72D91DD91AEF009A9BDC /* FareDetailsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B72D81DD91AEF009A9BDC /* FareDetailsDataModel.swift */; };
 		968B72DC1DD91CC1009A9BDC /* RiderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B72DB1DD91CC1009A9BDC /* RiderTableViewController.swift */; };
@@ -38,7 +38,7 @@
 		968B72BF1DD9109E009A9BDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		968B72C11DD9109E009A9BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		968B72C61DD9109E009A9BDC /* TicketFareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketFareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		968B72CA1DD9109E009A9BDC /* TicketFareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketFareTests.swift; sourceTree = "<group>"; };
+		968B72CA1DD9109E009A9BDC /* FareDataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FareDataModelTests.swift; sourceTree = "<group>"; };
 		968B72CC1DD9109E009A9BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		968B72D51DD91A72009A9BDC /* FareDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FareDataModel.swift; sourceTree = "<group>"; };
 		968B72D81DD91AEF009A9BDC /* FareDetailsDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FareDetailsDataModel.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		968B72C91DD9109E009A9BDC /* TicketFareTests */ = {
 			isa = PBXGroup;
 			children = (
-				968B72CA1DD9109E009A9BDC /* TicketFareTests.swift */,
+				968B72CA1DD9109E009A9BDC /* FareDataModelTests.swift */,
 				968B72CC1DD9109E009A9BDC /* Info.plist */,
 			);
 			path = TicketFareTests;
@@ -252,7 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				968B72CB1DD9109E009A9BDC /* TicketFareTests.swift in Sources */,
+				968B72CB1DD9109E009A9BDC /* FareDataModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

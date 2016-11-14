@@ -12,11 +12,19 @@ import UIKit
 /// Base data model for the representation of fares.
 struct FareDataModel {
     
+    ////////////////////////////////////////////////////////////////////////////
     // MARK: - Parameters
+    
+    /// The proper name of the fare.
     let fareName: String
+    
+    /// The subtext description of the fare.
     let fareDescription: String?
+    
+    /// The options of the fare that can be selected.
     let fareDetails: [FareDetailsDataModel]
     
+    ////////////////////////////////////////////////////////////////////////////
     // MARK: - View Specific Formatting Methods
     
     /**
@@ -49,6 +57,7 @@ struct FareDataModel {
     
 }
 
+// MARK: - Sorting Extension
 /// Sort and equality methods
 extension FareDataModel {
     
@@ -63,7 +72,7 @@ extension FareDataModel {
     
 }
 
-
+// MARK: - Data Gathering Extension
 /// Methods pertaining to gathering the payload data related to fares.
 extension FareDataModel {
     

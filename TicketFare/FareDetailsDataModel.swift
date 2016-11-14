@@ -11,9 +11,17 @@ import UIKit
 
 /// Base data model for the representation of fare details / options.
 struct FareDetailsDataModel {
+    
+    ////////////////////////////////////////////////////////////////////////////
+    // MARK: - Parameters
+    
+    /// The description title of the fare option.
     let description: String
+    
+    /// The price of the fare option.
     let price: Double
     
+    ////////////////////////////////////////////////////////////////////////////
     // MARK: - View Specific Formatting Methods
     
     /**
@@ -57,6 +65,12 @@ struct FareDetailsDataModel {
                                                                        NSFontAttributeName: UIFont.systemFont(ofSize: 12.0)])
     }
 
+    /**
+     The title that should be used for the button on the purchase screen
+     - parameter The total number of tickets currently selected by the user.
+     - returns An attributed string with the appropriate attributes to represent
+     the entire label of the button
+     */
     func formattedButtonTitle(tickets: Int) -> NSAttributedString {
         
         // Generate the raw string first
@@ -72,6 +86,8 @@ struct FareDetailsDataModel {
     }
 
     /// Helps format tickets correctly based on how many are available
+    /// - returns The proper formatted tickets string pertaining to the total 
+    /// number of tickets currently selected.
     func ticketTitle(numberOfTickets: Int) -> String {
         var ticketsTitle = "Tickets"
         if numberOfTickets == 1 {
@@ -82,6 +98,7 @@ struct FareDetailsDataModel {
     }
 }
 
+// MARK: - Organization Extension
 /// Methods pertaining to organizing the payload data related to fare details.
 extension FareDetailsDataModel {
     
