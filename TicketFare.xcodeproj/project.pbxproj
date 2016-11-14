@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		968B72B61DD9109E009A9BDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B72B51DD9109E009A9BDC /* AppDelegate.swift */; };
-		968B72B81DD9109E009A9BDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B72B71DD9109E009A9BDC /* ViewController.swift */; };
 		968B72BB1DD9109E009A9BDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968B72B91DD9109E009A9BDC /* Main.storyboard */; };
 		968B72BD1DD9109E009A9BDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968B72BC1DD9109E009A9BDC /* Assets.xcassets */; };
 		968B72C01DD9109E009A9BDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 968B72BE1DD9109E009A9BDC /* LaunchScreen.storyboard */; };
 		968B72CB1DD9109E009A9BDC /* TicketFareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B72CA1DD9109E009A9BDC /* TicketFareTests.swift */; };
+		968B72D61DD91A72009A9BDC /* FareDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B72D51DD91A72009A9BDC /* FareDataModel.swift */; };
+		968B72D91DD91AEF009A9BDC /* FareDetailsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B72D81DD91AEF009A9BDC /* FareDetailsDataModel.swift */; };
+		968B72DC1DD91CC1009A9BDC /* RiderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B72DB1DD91CC1009A9BDC /* RiderTableViewController.swift */; };
+		96F50EBC1DD921D000F7510E /* fares.json in Resources */ = {isa = PBXBuildFile; fileRef = 96F50EBB1DD921D000F7510E /* fares.json */; };
+		96F50EBE1DD9448E00F7510E /* FareTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F50EBD1DD9448E00F7510E /* FareTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +32,6 @@
 /* Begin PBXFileReference section */
 		968B72B21DD9109E009A9BDC /* TicketFare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketFare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		968B72B51DD9109E009A9BDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		968B72B71DD9109E009A9BDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		968B72BA1DD9109E009A9BDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		968B72BC1DD9109E009A9BDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		968B72BF1DD9109E009A9BDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +39,11 @@
 		968B72C61DD9109E009A9BDC /* TicketFareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketFareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		968B72CA1DD9109E009A9BDC /* TicketFareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketFareTests.swift; sourceTree = "<group>"; };
 		968B72CC1DD9109E009A9BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		968B72D51DD91A72009A9BDC /* FareDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FareDataModel.swift; sourceTree = "<group>"; };
+		968B72D81DD91AEF009A9BDC /* FareDetailsDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FareDetailsDataModel.swift; sourceTree = "<group>"; };
+		968B72DB1DD91CC1009A9BDC /* RiderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiderTableViewController.swift; sourceTree = "<group>"; };
+		96F50EBB1DD921D000F7510E /* fares.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fares.json; sourceTree = "<group>"; };
+		96F50EBD1DD9448E00F7510E /* FareTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FareTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +85,10 @@
 		968B72B41DD9109E009A9BDC /* TicketFare */ = {
 			isa = PBXGroup;
 			children = (
+				96F50EBA1DD921C800F7510E /* Resources */,
+				968B72DA1DD91C8B009A9BDC /* Controllers */,
+				968B72D71DD91ACE009A9BDC /* Models */,
 				968B72B51DD9109E009A9BDC /* AppDelegate.swift */,
-				968B72B71DD9109E009A9BDC /* ViewController.swift */,
 				968B72B91DD9109E009A9BDC /* Main.storyboard */,
 				968B72BC1DD9109E009A9BDC /* Assets.xcassets */,
 				968B72BE1DD9109E009A9BDC /* LaunchScreen.storyboard */,
@@ -94,6 +104,32 @@
 				968B72CC1DD9109E009A9BDC /* Info.plist */,
 			);
 			path = TicketFareTests;
+			sourceTree = "<group>";
+		};
+		968B72D71DD91ACE009A9BDC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				968B72D51DD91A72009A9BDC /* FareDataModel.swift */,
+				968B72D81DD91AEF009A9BDC /* FareDetailsDataModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		968B72DA1DD91C8B009A9BDC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				968B72DB1DD91CC1009A9BDC /* RiderTableViewController.swift */,
+				96F50EBD1DD9448E00F7510E /* FareTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		96F50EBA1DD921C800F7510E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				96F50EBB1DD921D000F7510E /* fares.json */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +218,7 @@
 				968B72C01DD9109E009A9BDC /* LaunchScreen.storyboard in Resources */,
 				968B72BD1DD9109E009A9BDC /* Assets.xcassets in Resources */,
 				968B72BB1DD9109E009A9BDC /* Main.storyboard in Resources */,
+				96F50EBC1DD921D000F7510E /* fares.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,8 +236,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				968B72B81DD9109E009A9BDC /* ViewController.swift in Sources */,
+				968B72D91DD91AEF009A9BDC /* FareDetailsDataModel.swift in Sources */,
+				96F50EBE1DD9448E00F7510E /* FareTableViewController.swift in Sources */,
 				968B72B61DD9109E009A9BDC /* AppDelegate.swift in Sources */,
+				968B72DC1DD91CC1009A9BDC /* RiderTableViewController.swift in Sources */,
+				968B72D61DD91A72009A9BDC /* FareDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +444,7 @@
 				968B72D11DD9109E009A9BDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		968B72D21DD9109E009A9BDC /* Build configuration list for PBXNativeTarget "TicketFareTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +453,7 @@
 				968B72D41DD9109E009A9BDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

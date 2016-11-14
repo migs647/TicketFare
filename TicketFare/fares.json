@@ -1,0 +1,26 @@
+{
+  "Adult": {
+    "fares": [
+      { "description": "2.5 Hour Ticket", "price": 2.5 },
+      { "description": "1 Day Pass", "price": 5.0 },
+      { "description": "30 Day Pass", "price": 100 }
+    ],
+    "subtext": null
+  },
+  "Child": {
+    "fares": [
+      { "description": "2.5 Hour Ticket", "price": 1.5 },
+      { "description": "1 Day Pass", "price": 2.0 },
+      { "description": "30 Day Pass", "price": 40.0 }
+    ],
+    "subtext": "Ages 8-17"
+  },
+  "Senior": {
+    "fares": [
+      { "description": "2.5 Hour Ticket", "price": 1.0 },
+      { "description": "1 Day Pass", "price": 2.0 },
+      { "description": "30 Day Pass", "price": 40.0 }
+    ],
+    "subtext": "Ages 60+"
+  }
+}
