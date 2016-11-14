@@ -17,6 +17,7 @@
 		968B72DC1DD91CC1009A9BDC /* RiderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968B72DB1DD91CC1009A9BDC /* RiderTableViewController.swift */; };
 		96F50EBC1DD921D000F7510E /* fares.json in Resources */ = {isa = PBXBuildFile; fileRef = 96F50EBB1DD921D000F7510E /* fares.json */; };
 		96F50EBE1DD9448E00F7510E /* FareTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F50EBD1DD9448E00F7510E /* FareTableViewController.swift */; };
+		96F50EC01DD94B0B00F7510E /* FareSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F50EBF1DD94B0B00F7510E /* FareSelectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		968B72DB1DD91CC1009A9BDC /* RiderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiderTableViewController.swift; sourceTree = "<group>"; };
 		96F50EBB1DD921D000F7510E /* fares.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fares.json; sourceTree = "<group>"; };
 		96F50EBD1DD9448E00F7510E /* FareTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FareTableViewController.swift; sourceTree = "<group>"; };
+		96F50EBF1DD94B0B00F7510E /* FareSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FareSelectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			children = (
 				968B72DB1DD91CC1009A9BDC /* RiderTableViewController.swift */,
 				96F50EBD1DD9448E00F7510E /* FareTableViewController.swift */,
+				96F50EBF1DD94B0B00F7510E /* FareSelectionViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				968B72D91DD91AEF009A9BDC /* FareDetailsDataModel.swift in Sources */,
+				96F50EC01DD94B0B00F7510E /* FareSelectionViewController.swift in Sources */,
 				96F50EBE1DD9448E00F7510E /* FareTableViewController.swift in Sources */,
 				968B72B61DD9109E009A9BDC /* AppDelegate.swift in Sources */,
 				968B72DC1DD91CC1009A9BDC /* RiderTableViewController.swift in Sources */,

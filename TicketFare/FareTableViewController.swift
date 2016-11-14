@@ -39,24 +39,45 @@ class FareTableViewController: UITableViewController {
         }
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "fareIdentifierCell", for: indexPath)
 
-        // Configure the cell...
+        if let fareData = fareData {
+            if indexPath.row < fareData.fareDetails.count {
+                let cellData = fareData.fareDetails[indexPath.row]
+                cell.textLabel?.attributedText = cellData.formattedDescription()
+                cell.detailTextLabel?.attributedText = cellData.formattedPrice()
+            }
+        } else {
+            // Configure an error cell
+            cell.textLabel?.text = NSLocalizedString("Failed to initialize the fare data.", comment: "")
+        }
 
         return cell
     }
-    */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        // First check to see if we have a selected row (we should)
+        if let currentlySelectedRow = self.tableView.indexPathForSelectedRow {
+            
+            // Grab the fare controller before it is pushed so we can pass the correct
+            // data.
+            if let fareController = segue.destination as? FareSelectionViewController {
+                
+                if let tempFareData = fareData,
+                    currentlySelectedRow.row < fareData!.fareDetails.count {
+                    fareController.selectedFareDetailsData = tempFareData.fareDetails[currentlySelectedRow.row]
+                    fareController.selectedFareData = fareData
+                }
+                
+            }
+        }
     }
-    */
 
 }

@@ -28,7 +28,7 @@ struct FareDataModel {
     */
     func formattedName() -> NSAttributedString {
         return NSAttributedString(string: fareName, attributes: [NSForegroundColorAttributeName: UIColor.gray,
-                                                                 NSFontAttributeName: UIFont.boldSystemFont(ofSize: 14.0)])
+                                                                 NSFontAttributeName: UIFont.boldSystemFont(ofSize: 16.0)])
     }
 
     /**
@@ -41,7 +41,7 @@ struct FareDataModel {
     func formattedDescription() -> NSAttributedString? {
         if let fareDescription = fareDescription {
             return NSAttributedString(string: fareDescription, attributes: [NSForegroundColorAttributeName: UIColor.gray,
-                                                                     NSFontAttributeName: UIFont.systemFont(ofSize: 12.0)])
+                                                                     NSFontAttributeName: UIFont.systemFont(ofSize: 14.0)])
         } else {
             return nil
         }

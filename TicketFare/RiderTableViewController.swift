@@ -59,14 +59,27 @@ class RiderTableViewController: UITableViewController {
         return cell
     }
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        // First check to see if we have a selected row (we should)
+        if let currentlySelectedRow = self.tableView.indexPathForSelectedRow {
+            // Grab the fare controller before it is pushed so we can pass the correct
+            // data.
+            if let fareController = segue.destination as? FareTableViewController {
+                
+                if let tempFareData = fareData,
+                    currentlySelectedRow.row < fareData!.count {
+                    fareController.fareData = tempFareData[currentlySelectedRow.row]
+                }
+                
+            }
+        }
+        
     }
-    */
 
 }
